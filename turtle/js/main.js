@@ -17,7 +17,11 @@
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
 
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var geometry = new THREE.BoxGeometry(
+      game.VERTUAL_BLOCK_SIZE,
+      game.VERTUAL_BLOCK_SIZE,
+      game.VERTUAL_BLOCK_SIZE
+    );
     var loader = new THREE.CubeTextureLoader();
     loader.setPath( 'img/textures/' );
 
@@ -33,7 +37,7 @@
 
     // camera.position.y = 5;
     // camera.position.x = 5;
-    camera.position.z = 5;
+    camera.position.z = game.VERTUAL_BLOCK_SIZE * 2;
     // camera.rotation.x = -1.57;
     // camera.rotation.y = 1.57;
 
