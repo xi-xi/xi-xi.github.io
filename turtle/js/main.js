@@ -38,7 +38,7 @@
     camera.position.y = game.VERTUAL_BLOCK_SIZE * 2;;
     // camera.position.x = 5;
     camera.position.z = game.VERTUAL_BLOCK_SIZE * 2;
-    camera.rotation.x = 3.14 / 4.0;
+//    camera.rotation.x = 3.14 / 4.0;
     // camera.rotation.y = 1.57;
 
     var render = function () {
@@ -52,6 +52,7 @@
   game.update = function(){
     // game.cube.rotation.x += 0.1;
     // game.cube.rotation.y += 0.1;
+    camera.rotation.x += 0.01;
   };
   game.onCodeChanged = function(code){
   };
