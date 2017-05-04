@@ -19,7 +19,7 @@
 
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     var loader = new THREE.CubeTextureLoader();
-    loader.setPath( 'img/Vanilla-32x32/' );
+    loader.setPath( 'img/textures/' );
 
     var textureCube = loader.load( [
     	'default_dirt.png', 'default_dirt.png',
