@@ -53,6 +53,7 @@
     // game.cube.rotation.x += 0.1;
     // game.cube.rotation.y += 0.1;
     camera.rotation.x += 0.01;
+    console.log(camera.rotation);
   };
   game.onCodeChanged = function(code){
   };
