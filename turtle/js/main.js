@@ -24,14 +24,14 @@
     var textureCube = loader.load( [
     	'default_dirt.png', 'default_dirt.png',
     	'default_glass.png', 'default_dirt.png',
-    	'default_glass.png', 'default_dirt.png'
+    	'default_dirt.png', 'default_dirt.png'
     ] );
 
     var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
     scene.add( game.cube );
 
-    camera.position.z = 5;
+    camera.position.y = 5;
 
     var render = function () {
       requestAnimationFrame( render );
@@ -42,8 +42,8 @@
     render();
   };
   game.update = function(){
-    game.cube.rotation.x += 0.1;
-    game.cube.rotation.y += 0.1;
+    // game.cube.rotation.x += 0.1;
+    // game.cube.rotation.y += 0.1;
   };
   game.onCodeChanged = function(code){
   };
