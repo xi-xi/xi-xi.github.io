@@ -35,10 +35,10 @@
     game.cube = new THREE.Mesh( geometry, material );
     scene.add( game.cube );
 
-    // camera.position.y = 5;
+    camera.position.y = game.VERTUAL_BLOCK_SIZE * 2;;
     // camera.position.x = 5;
     camera.position.z = game.VERTUAL_BLOCK_SIZE * 2;
-    // camera.rotation.x = -1.57;
+    camera.rotation.x = 3.14 / 4.0;
     // camera.rotation.y = 1.57;
 
     var render = function () {
