@@ -2,73 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Test xi-xi page</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<title>Turtle 3d</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">xi-xi</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-			</div>
-		</nav>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Test Page for xi-xi</h1>
-				<p>強くなりたい...</p>
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h2>Bootstrap</h2>
-					<p>
-						このページもそうですが、最近流行りのレスポンシブデザインを実現する方法として、Bootstrapを使うのが最も簡単かつ楽でしょう。
-						これをツールとして使いこなせると色々楽しながらスマフォ対応な何かを実現できるといいなー
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h2>jQuery</h2>
-					<p>
-						c++でいうところのboostの立ち位置である、javascriptライブラリです。
-						色々できるらしいので、それをもとにして何か面白いものができると幸せっぽい。
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h2>未定</h2>
-					<p>
-						Web周りのネタって他に何があるんだろう
-                        <a href="hoge.html">りんく</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="container">
-				<p class="text-muted text-center">
-					xi-xi system
-				</p>
-			</div>
-		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<form>
+			<input id="code" type="hidden" name="code" value="サンプル"></input>
+			<!---
+				こいつの値を変えたいなら
+				$('#code').val("value").trigger("change")
+				のようにして、値の変更をきちんと通知してあげて下さい。
+				さもないとイベント様が死んじゃう。
+			-->
+		</form>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
