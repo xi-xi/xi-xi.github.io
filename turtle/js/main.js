@@ -27,7 +27,7 @@
 
     var textureCube = loader.load( [
     	'default_dirt.png', 'default_dirt.png',
-    	'default_glass.png', 'default_dirt.png',
+    	'default_glass.png', 'default_glass.png',
     	'default_dirt.png', 'default_dirt.png'
     ] );
 
