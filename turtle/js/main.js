@@ -41,13 +41,13 @@ var game = {};
     //   game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0}, "dirt")
     // ];
     scene.add( game.cube );
-    for (var x = -10; x < 10; x++) {
-      for (var z = -10; z < 10; z++) {
+    for (var ix = -10; ix < 10; ix++) {
+      for (var iz = -10; iz < 10; iz++) {
         var block = game.createBlock(
           {
-            x:x*game.VERTUAL_BLOCK_SIZE,
+            x:ix*game.VERTUAL_BLOCK_SIZE,
             y:0,
-            z:z*game.VERTUAL_BLOCK_SIZE
+            z:iz*game.VERTUAL_BLOCK_SIZE
           },
           "dirt"
         );
