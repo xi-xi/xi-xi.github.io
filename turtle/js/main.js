@@ -79,11 +79,11 @@ var game = {};
       textureCube.minFilter = THREE.LinearMipMapLinearFilter;
 
       var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
-      var mesh new THREE.Mesh( geometry, material );
+      var mesh = new THREE.Mesh( geometry, material );
       mesh.position = pos;
       return mesh;
     }
-  }
+  };
   game.update = function(){
     // game.cube.rotation.x += 0.1;
     // game.cube.rotation.y += 0.1;
