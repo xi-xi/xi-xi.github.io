@@ -37,8 +37,8 @@ var game = {};
     var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
     var meshes = [
-      game.createBlock({x:0, y:0, z:game.VERTUAL_BLOCK_SIZE}),
-      game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0})
+      game.createBlock({x:0, y:0, z:game.VERTUAL_BLOCK_SIZE}, "dirt"),
+      game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0}, "dirt")
     ];
     scene.add( game.cube );
     scene.add(meshes[0]);
