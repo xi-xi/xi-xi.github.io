@@ -36,13 +36,25 @@ var game = {};
 
     var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
-    var meshes = [
-      game.createBlock({x:0, y:0, z:game.VERTUAL_BLOCK_SIZE}, "dirt"),
-      game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0}, "dirt")
-    ];
+    game.meshes = [];
+    //   game.createBlock({x:0, y:0, z:game.VERTUAL_BLOCK_SIZE}, "dirt"),
+    //   game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0}, "dirt")
+    // ];
     scene.add( game.cube );
-    scene.add(meshes[0]);
-    scene.add(meshes[1]);
+    for (var x = -10; x < 10; x++) {
+      for (var z = -10; z < 10; z++) {
+        var block = game.createBlock(
+          {
+            x:x*game.VERTUAL_BLOCK_SIZE,
+            y:0,
+            z:z*game.VERTUAL_BLOCK_SIZE
+          },
+          "dirt"
+        );
+        game.meshes.push(block);
+        scene.add(block);
+      }
+    }
 
     game.camera.position.y = game.VERTUAL_BLOCK_SIZE * 2;;
     // camera.position.x = 5;
@@ -81,9 +93,6 @@ var game = {};
 
       var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
       var mesh = new THREE.Mesh( geometry, material );
-      // mesh.position.x = pos.x;
-      // mesh.position.y = pos.y;
-      // mesh.position.z = pos.z;
       return mesh;
     }
   };
