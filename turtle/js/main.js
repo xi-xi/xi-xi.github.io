@@ -1,3 +1,4 @@
+var game = {};
 (function(game){
   game.VERTUAL_BLOCK_SIZE = 128;
   game.player = {};
@@ -64,4 +65,4 @@
   game.onCodeChanged = function(code){
   };
   game._init();
-})({});
+})(game);
