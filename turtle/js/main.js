@@ -67,6 +67,7 @@ var game = {};
         game.VERTUAL_BLOCK_SIZE,
         game.VERTUAL_BLOCK_SIZE
       );
+      geometry.translate(pos.x, pos.y, pos.z);
       var loader = new THREE.CubeTextureLoader();
       loader.setPath( 'img/textures/' );
 
@@ -80,9 +81,9 @@ var game = {};
 
       var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
       var mesh = new THREE.Mesh( geometry, material );
-      mesh.position.x = pos.x;
-      mesh.position.y = pos.y;
-      mesh.position.z = pos.z;
+      // mesh.position.x = pos.x;
+      // mesh.position.y = pos.y;
+      // mesh.position.z = pos.z;
       return mesh;
     }
   };
