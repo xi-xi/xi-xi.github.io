@@ -36,7 +36,13 @@ var game = {};
 
     var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
+    var meshes = [
+      game.createBlock({x:0, y:0, z:game.VERTUAL_BLOCK_SIZE}),
+      game.createBlock({x:game.VERTUAL_BLOCK_SIZE, y:0, z:0})
+    ];
     scene.add( game.cube );
+    scene.add(meshes[0]);
+    scene.add(meshes[1]);
 
     game.camera.position.y = game.VERTUAL_BLOCK_SIZE * 2;;
     // camera.position.x = 5;
@@ -54,6 +60,30 @@ var game = {};
 
     render();
   };
+  game.createBlock = function(pos, name){
+    if(name == "dirt"){
+      var geometry = new THREE.BoxGeometry(
+        game.VERTUAL_BLOCK_SIZE,
+        game.VERTUAL_BLOCK_SIZE,
+        game.VERTUAL_BLOCK_SIZE
+      );
+      var loader = new THREE.CubeTextureLoader();
+      loader.setPath( 'img/textures/' );
+
+      var textureCube = loader.load( [
+        'default_dirt.png', 'default_dirt.png',
+        'default_grass.png', 'default_dirt.png',
+        'default_dirt.png', 'default_dirt.png'
+      ] );
+      textureCube.magFilter = THREE.NearestFilter;
+      textureCube.minFilter = THREE.LinearMipMapLinearFilter;
+
+      var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
+      var mesh new THREE.Mesh( geometry, material );
+      mesh.position = pos;
+      return mesh;
+    }
+  }
   game.update = function(){
     // game.cube.rotation.x += 0.1;
     // game.cube.rotation.y += 0.1;
