@@ -80,7 +80,9 @@ var game = {};
 
       var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
       var mesh = new THREE.Mesh( geometry, material );
-      mesh.position = pos;
+      mesh.position.x = pos.x;
+      mesh.position.y = pos.y;
+      mesh.position.z = pos.z;
       return mesh;
     }
   };
