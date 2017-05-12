@@ -31,8 +31,10 @@ var game = {};
     	'default_glass.png', 'default_glass.png',
     	'default_dirt.png', 'default_dirt.png'
     ] );
+    textureCube.magFilter = THREE.NearestFilter;
+    textureCube.minFilter = THREE.LinearMipMapLinearFilter;
 
-    var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
+    var material = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
     scene.add( game.cube );
 
