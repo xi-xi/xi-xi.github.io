@@ -42,10 +42,6 @@ var game = {};
 
     game.camera.rotation.x = -3.14 / 4.0;
 
-    game.controls = new THREE.FirstPersonControls(game.camera);
-    game.controls.movementSpeed = 1000;
-    game.controls.lookSpeed = 0.125;
-    game.controls.lookVertical = true;
     // camera.rotation.y = 1.57;
 
     var render = function () {
