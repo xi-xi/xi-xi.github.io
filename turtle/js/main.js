@@ -34,7 +34,7 @@ var game = {};
     textureCube.magFilter = THREE.NearestFilter;
     textureCube.minFilter = THREE.LinearMipMapLinearFilter;
 
-    var material = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureCube } );
+    var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
     game.cube = new THREE.Mesh( geometry, material );
     scene.add( game.cube );
 
