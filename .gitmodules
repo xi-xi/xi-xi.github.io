@@ -1,0 +1,6 @@
+[submodule "shared/themes/hugo-theme-sam"]
+	path = shared/themes/hugo-theme-sam
+	url = https://github.com/vickylai/hugo-theme-sam.git
+[submodule "shared/themes/sam"]
+	path = shared/themes/sam
+	url = https://github.com/vickylai/hugo-theme-sam.git
