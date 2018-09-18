@@ -3,23 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://xi-xi.github.io/link/</loc>
+    <lastmod>2018-09-18T14:45:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xi-xi.github.io/pub/</loc>
+    <lastmod>2018-09-18T14:45:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xi-xi.github.io/proj/</loc>
+    <lastmod>2018-09-18T14:44:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xi-xi.github.io/about/</loc>
     <lastmod>2018-09-18T05:14:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://xi-xi.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://xi-xi.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2018-09-18T05:14:47+00:00</lastmod>
+    <loc>https://xi-xi.github.io/</loc>
+    <lastmod>2018-09-18T14:45:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   

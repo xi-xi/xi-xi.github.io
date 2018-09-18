@@ -3,7 +3,17 @@ languageCode = "ja-jp"
 title = "Takumi Nakamura"
 theme = "sam"
 
+[params]
+    homepage             = "Top"  
+
 [[params.mainMenu]]
     link = "/about"
     text = "About"
 
+[[params.mainMenu]]
+    link = "/proj"
+    text = "Projects"
+
+[[params.mainMenu]]
+    link = "/pub"
+    text = "Publications"
