@@ -1,4 +1,4 @@
-baseURL = "https://xi-xi.github.io"
+baseURL = "https://xi-xi.github.io/"
 languageCode = "ja-jp"
 title = "Takumi Nakamura"
 theme = "sam"
