@@ -1,0 +1,13 @@
+version: "3"
+services:
+    hugo:
+        build: src
+        volumes:
+            - ./shared:/root/hugo_src
+            - ./:/root/public_html
+        ports:
+            - 1313:1313
+        network_mode: "host"
+        working_dir: /root/hugo_src
+        command: ["hugo", "server", "-wDs", "./", "-d", "../public_html"]
+

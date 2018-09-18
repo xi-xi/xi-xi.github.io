@@ -1,0 +1,9 @@
+baseURL = "https://xi-xi.github.io"
+languageCode = "ja-jp"
+title = "Takumi Nakamura"
+theme = "sam"
+
+[[params.mainMenu]]
+    link = "/about"
+    text = "About"
+
