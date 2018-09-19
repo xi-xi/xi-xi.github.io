@@ -1,0 +1,9 @@
+version: "2"
+services:
+    hugo:
+        build: src
+        volumes:
+            - ./shared:/root/hugo_src
+            - ./:/root/public_html
+        working_dir: /root/hugo_src
+

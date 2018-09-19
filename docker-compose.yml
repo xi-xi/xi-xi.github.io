@@ -1,20 +1,16 @@
-version: "3"
+version: "2"
 services:
-    hugo:
-        build: src
-        volumes:
-            - ./shared:/root/hugo_src
-            - ./:/root/public_html
+    hugo_server:
+        extends:
+            file: hugo.yml
+            service: hugo
         ports:
             - 1313:1313
         network_mode: "host"
-        working_dir: /root/hugo_src
         command: ["hugo", "server", "-wDs", "./"]
     hugo_deploy:
-        build: src
-        volumes:
-            - ./shared:/root/hugo_src
-            - ./:/root/public_html
-        working_dir: /root/hugo_src
+        extends:
+            file: hugo.yml
+            service: hugo
         command: ["hugo", "-wD", "-d", "../public_html"]
 
