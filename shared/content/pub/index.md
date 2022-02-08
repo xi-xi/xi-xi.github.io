@@ -1,10 +1,14 @@
 ---
 title: "Publications"
-date: 2018-09-18T14:45:11Z
+date: 2019-09-18T14:45:11Z
 draft: true
 ---
 
-* 中村匠, 湯口彰重, Aubert Mael, Garcia Ricardez Gustavo Alfonso, 高松淳, 小笠原司：“オントロジに基づき家電機器操作をするサービスロボットのための教示用インタフェース”, 第36回日本ロボット学会学術講演会 (RSJ2018), 3D2-02, 2018. 
+* 湯口彰重, 豊田真行, 山田誠之, 中村匠, ガルシアグスタボ, 高松淳, 小笠原司：“動作プリミティブセットを持つロボットアームによるオントロジに基づいた調理家電機器の一連操作の実行”, 日本機械学会ロボティクス・メカトロニクス講演会2021（ROBOMECH2021）, 2A1-H09, 2021.
+* Akishige Yuguchi, Pattaraporn Tulathum, Takumi Nakamura, Mayuki Toyoda, Masayuki Yamada, Gustavo Alfonso Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara: “Toward Robot-Agnostic Home Appliance Operation: Task Execution Using Motion Primitives and Ontology”, 第21回計測自動制御学会システムインテグレーション部門講演会（SI2020）, 3E2-06, 2020.
+* Takumi Nakamura, Akishige Yuguchi, Aubert Maël, Gustavo Alfonso Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara: “Ontology Generation Using GUI and Simulation for Service Robots to Operate Home Appliances”, Proceedings of the 2019 IEEE International Conference on Robotic Computing (IRC 2019), pp. 315-320, Naples, Italy, 2019.
+* 中村 匠, 湯口 彰重, Gustavo Alfonso Garcia Ricardez, 高松 淳, 小笠原 司：“シミュレーション空間を援用したロボット家電操作のためのオントロジ構築の加速,” 第19回計測自動制御学会システムインテグレーション部門講演会（SI2018）, 3A1-02, 2018.
+* 中村匠, 湯口彰重, Aubert Mael, Garcia Ricardez Gustavo Alfonso, 高松淳, 小笠原司：“オントロジに基づき家電機器操作をするサービスロボットのための教示用インタフェース”, 第36回日本ロボット学会学術講演会 (RSJ2018), 3D2-02, 2018.
 * 中村匠, 飯田賢一, 竹村憲太郎, 小枝正直, 中村恭之, 上田悦子：“古典舞踊動作の手先軌道に着目した優美さの定量化－観客視点位置による優美さ特徴の変動－”,計測自動制御学会第17回計測自動制御学会システムインテグレーション部門講演会（SI2016)，2N2-2，pp.2020-2022，2016.
 * 中村匠, 飯田賢一, 竹村憲太郎, 小枝正直, 中村恭之, 上田悦子：“観客視点を考慮した古典舞踊動作における手先軌道の解析”,日本機械学会ロボティクス・メカトロニクス講演会2016，2P1-12a4，pp.2P1-12a4(1)-2P1-12a4(4)，2016.
 * 中村匠, 飯田賢一, 上田悦子：“美の線に着目した舞踊動作からの優美さ抽出”,日本機械学会ロボティクス・メカトロニクス講演会2015，2A2-H09，pp.2A2-H09(1)-2A2-H09(2)，2015.
