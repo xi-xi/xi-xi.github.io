@@ -1,9 +1,9 @@
-FROM alpine:3.8
+FROM alpine:3.15
 WORKDIR /tmp
-RUN apk --update add wget tar \
+RUN apk --update --no-cache add wget tar gcompat libgcc libstdc++\
     && rm -rf /var/cache/apk/* \
-    && wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.tar.gz \
-    && tar -axvf hugo_0.48_Linux-64bit.tar.gz \
+    && wget https://github.com/gohugoio/hugo/releases/download/v0.93.2/hugo_extended_0.93.2_Linux-64bit.tar.gz \
+    && tar -axvf hugo_extended_0.93.2_Linux-64bit.tar.gz \
     && cp hugo /usr/local/bin
 WORKDIR /root
 
