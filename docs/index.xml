@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language><atom:link href="https://xi-xi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://xi-xi.github.io/about/</link>
+      <pubDate>Sun, 06 Mar 2022 05:14:47 +0000</pubDate>
+      
+      <guid>https://xi-xi.github.io/about/</guid>
+      <description> Name:  Takumi Nakamura   Mail:  nakamura.takumi.nk4 [at] is.naist.jp   GitHub  </description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://xi-xi.github.io/pub/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
@@ -22,15 +31,6 @@
       
       <guid>https://xi-xi.github.io/proj/</guid>
       <description>色々やってきた気がする&amp;hellip;けど書くのが大変なのでそのうち&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://xi-xi.github.io/about/</link>
-      <pubDate>Tue, 18 Sep 2018 05:14:47 +0000</pubDate>
-      
-      <guid>https://xi-xi.github.io/about/</guid>
-      <description></description>
     </item>
     
   </channel>
